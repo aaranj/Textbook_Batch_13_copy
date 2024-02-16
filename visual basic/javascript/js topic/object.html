@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let s={name:"ak",class:"12th",status:"pass",total:"100",display:function(){
+            console.log("student name"+this.name+"of class"+this.class+"has maks"+this.total);
+        }};
+        let k=0;
+        function update(x){
+            x.total=10;
+        }
+       s.display();
+       update(s);
+       s.display();
+
+       function person(first,last, ege,eye){
+        this.firstName=first;
+        this.lastName=last;
+        this.ege=age;
+        this.eyeColor=eye;
+       }
+       function students(name,pass,status){
+        this.name=name;
+        this.pass=sclass;
+        this.status=status;
+       }
+       let s2=new students("narayan","vii","pass");
+        
+    </script>
+</body>
+</html>

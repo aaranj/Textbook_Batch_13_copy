@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demoObject"></p>
+
+    <script>
+        let studentDetails={
+            name:'hari',id:23,disignation:'spider man',display:function(){
+                console.log('inside',this);
+            }
+        }
+        console.log(studentDetails);
+        document.getElementById('demoObject').innerHTML=studentDetails.name;
+        console.log('outside',this);
+        studentDetails.display();
+
+
+
+
+
+
+
+
+
+
+
+
+        class student{
+            constructor(){
+                this.title='java script'
+
+            };
+
+        }
+        var s=new student();
+        console.log(s.title);
+    </script>
+</body>
+</html>

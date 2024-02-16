@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // async function myfunction(second)
+        // {
+        //     let date=new Date();
+        //     let current=new Date();
+        //     while(current-date<second*1000)
+        //     {
+        //         current=new Date();
+
+        //     }
+        //     throw new error("this is error message");
+        //     return "hare krishna"
+
+        // }
+        // function success(value)
+        // {
+        //     console.log("it is error"+value);
+        // }
+        // myfunction(5).then(success,error);
+        // console.log("this is executed");
+
+        const fun2=(()=>{
+            setTimeout(()=>{
+                console.log('fun2 is starting');
+            },4000);
+        })
+            const fun1=(()=>{
+                console.log('fun1 is strating');
+                fun2();
+                console.log('fun1 is ending');
+            })
+   
+        fun1();
+
+
+
+
+
+
+    </script>
+</body>
+</html>

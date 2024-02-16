@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #touc{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    
+    <form  id="myform">
+        <input type="text" name="username" id="username">
+        <input type="submit" value="submit"><br><br>
+    </form>
+    <div id="touchDiv">hari bol</div>
+    <div id="touch">hare krishna</div>
+    <div id="touc"></div>
+    <script>
+        document.getElementById('myform').addEventListener('click',()=>{
+            alert("hare krishna");
+        })
+
+
+
+        //touchstart
+        const touchDiv=document.getElementById("touchDiv");
+        touchDiv.addEventListener('dblclick',()=>{
+            touchDiv.style.backgroundColor="red";
+                  
+
+        })
+        const touch=document.getElementById("touch");
+        touch.addEventListener('mousemove',()=>{
+            touch.style.backgroundColor="green";
+                  
+
+        })
+        const touc=document.getElementById("touc");
+        touc.addEventListener('mousemove',()=>{
+            touc.style.backgroundColor="red";
+
+        })
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

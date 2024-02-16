@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h2>task manager</h2>
+        <div class="classform">
+            <input type="text" id="task">
+            <button onclick="addtask()">add task</button>
+
+        </div>
+    </div>
+    <ul class="list">
+
+    </ul>
+    <script>
+        let tasks=[];
+        function addtask(){
+            const tas=document.getElementById('task').value;
+            const taskt=tas.trim();
+            if(taskt!==''){
+                tasks.push(taskt);
+                console.log('task array',tasks);
+            }
+            else{
+                alert('please fill details');
+                
+
+            }
+            display(); 
+            
+            
+        }
+       
+      
+        function display(){
+            const tlist=document.getElementById('list');
+            tlist.innerHTML='';
+            for(let i=0;i<tasks.length;i++){
+                const taskitem=document.createElement('li');
+                taskitem.textContent=tasks[i];
+               
+                tlist.appendChild(taskitem);
+                }
+                
+                
+        }
+        
+        
+    </script>
+    
+</body>
+</html>

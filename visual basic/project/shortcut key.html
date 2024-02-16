@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+        document.addEventListener('keydown',(e)=>{
+            if(e.key=='s' && e.ctrlKey){
+                alert('om shanti om');
+            }
+        })
+    </script> -->
+
+    <input type="text" value="hare krishna" oncopy="return false">
+    <input type="text" onpaste="return false;">
+
+
+
+
+    <p id="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non ea quibusdam aperiam odit maxime voluptatem, repellat sint dolores deserunt, commodi facere provident, pariatur eveniet distinctio! Quisquam facere officiis dolorum vitae?</p>
+    <textarea name="" id="text" cols="30" rows="10"></textarea>
+    <script>
+        let para=document.getElementById('para');
+        para.addEventListener('copy',function (event){
+            event.preventDefault();
+            return false;
+        })
+        Text.addEventListener('paste',function(event){
+            event.preventDefault();
+            return false;
+        })
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

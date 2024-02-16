@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        // method no 1
+        // let circle=[10,20,40];
+        // let areas=[];
+        // let area=0;
+        // for(let i=0;i<circle.length;i++)
+        // {
+        //     area=3.14*circle[i]*circle[i];
+        //     areas.push(area);
+
+        // }
+        // document.getElementById('demo').innerHTML=areas;
+        // console.log(areas);
+
+
+         //throw map mathod
+        //  let cicle=[50,60,70,80];
+        //  let areas=cicle.map((r)=>.14*r*r);
+        //  document.getElementById('demo').innerHTML=areas;
+
+
+        // object in array mathod 3
+
+        let st=[{name:'ak',roll:5},
+        {name:'ak',roll:5},
+        {name:'krishna',roll:6},
+        {name:'ram',roll:9},
+        {name:'hari',roll:8},
+        {name:'hare',roll:10},];
+
+    //     let high=[];
+    // for(let i=0;i<st.length;i++){
+    //     if(st[i].roll<8)
+    //     {
+    //         console.log(st[i].name,st[i].roll);
+    //     }
+    // }
+
+    let f=st.filter((e)=>{
+        console.log(e);
+        return e.roll<8
+    })
+    console.log(f);
+
+    let hi=st.map((e)=>{
+        return e.roll>7
+    })
+    console.log(hi);
+
+
+
+
+
+
+
+      
+
+
+
+
+    </script>
+</body>
+</html>

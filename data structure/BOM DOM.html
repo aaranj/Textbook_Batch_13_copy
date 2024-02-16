@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="box1">
+        <p class="a">hari bol</p>
+        <p class="a">hare krishna</p>
+        <p class="a">hare ram </p>
+        <p class="a">ram ram</p>
+        <p class="a">krishna krishna</p>
+    </div>
+    <ol class="box2">
+        <li class="b">rigved</li>
+        <li class="b">athrved</li>
+        <li class="b">saamved</li>
+        <li class="b">saamved</li>
+        <li class="b">saamved</li>
+        <li class="b">saamved</li>
+        <li class="b">yjurved</li>
+        <li class="b">dfl</li>
+        <article>om bhur bhuv shwah tatsvitur bare nayam bhargo devsdhimhi dhiyo yona prachodyat</article>
+        <article>namo vishnupaday krishnapreshthay bhutale</article>
+        <article>shreemate bhkti vedant swami iti namine</article>
+    </ol>
+    <button id="btn1">google</button>
+    <button id="btn2">w3school</button>
+    <button id="btn3">close</button>
+    <script>
+        let btn1=document.getElementById('btn1');
+        let btn2=document.getElementById('btn2');
+        let btn3=document.getElementById('btn3');
+        let url='https://www.w3school.com';
+        let feature='height=500 ,width=700';
+        let win;
+        // btn1=addEventListener('click',function(){
+        //     win=window.alert('hari bol')
+        // });
+        btn2=addEventListener('click',function(){
+            win=window.open(url,w3school,feature);
+        });
+        // btn3=addEventListener('click',function(){
+        //     win=window.close();
+        // });
+
+
+        let a=document.querySelectorAll('.a');
+        for(let i=0;i<a.length;i++){
+        a[i].style.backgroundColor='green';
+        }
+        document.querySelector('a').style.color='blue';
+
+        //document.getElementsByTagName('box1').style.backgroundColor="yellow";
+
+        document.getElementsByClassName('b').color='yellow';
+        
+
+    </script>
+</body>
+</html>

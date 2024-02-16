@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Document</title>
+    <style>
+    body{
+        margin: 0px;
+        overflow: hidden;
+        background-color: black;
+        /* background-image: url("neture.jpg");
+        background-size: 100%, 100%; */
+    } 
+    .sun{
+        width: 100px;
+        height: 100px;
+        background-color: yellow;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -50px;
+        margin-left: -50px;
+        text-align: center;
+    }
+    .planet{
+        position: absolute;
+        border-radius: 50%;
+        /* background-color: #3498db; */
+        border-radius: 50%;
+        position: absolute;
+        top: 45%;
+        left: 45%;
+        margin-top: -50px;
+        margin-left: -50px;
+     
+
+    }
+    #budh{
+        width: 20px;
+        height: 20px; 
+        border-radius: 50%;
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        margin-top: -50px;
+        margin-left: -50px;
+        background-color: rgb(169, 124, 69); 
+        animation:orbit 68.7s linear infinite; 
+    }
+    #sukra{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        position: absolute;
+        top: 43%;
+        left: 44%;
+        margin-top: -50px;
+        margin-left: -50px;
+        background-color: rgb(107, 111, 92);
+        animation:orbit 68.7s linear infinite; 
+    }
+    #moon{
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        position: absolute;
+        top: 41%;
+        left: 39%;
+        margin-top: -50px;
+        margin-left: -50px;
+        background-color: white;
+        animation:orbit 68.7s linear infinite; 
+    }
+    #earth{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        position: absolute;
+        top: 45%;
+        left: 38%;
+        margin-top: -50px;
+        margin-left: -50px;
+        background-image: conic-gradient(rgb(24, 153, 192),green,rgb(30, 156, 181));
+        animation:orbit 68.7s linear infinite; 
+    }
+    #mangal{
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        position: absolute;
+        top: 58%;
+        left: 33%;
+        margin-top: -50px;
+        margin-left: -50px;
+        background-color: red;
+        animation:orbit 68.7s linear infinite; 
+    }
+    #virspati{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        position: absolute;
+        top: 28%;
+        left: 28%;
+        margin-top: -50px;
+        margin-left: -50px;
+        background-image: linear-gradient(white,rgba(240, 24, 35, 0.288));
+        animation:orbit 68.7s linear infinite; 
+    }
+    #ch{
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        position: absolute;
+        top: 45%;
+        left: 20%;
+      
+       transform: skew(5deg);
+        border: 10px solid white;
+        animation:orbit 68.7s linear infinite; 
+
+    }
+    #shani{
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        position: absolute;
+        top: 5cap;
+        left: 5cap;
+        margin-top: -50px;
+        margin-left: -50px;
+        background-color: rgb(205, 137, 47);
+        animation:orbit 68.7s linear infinite; 
+               
+    }
+    #arun{
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        position: absolute;
+        top: 35%;
+        left: 15%;
+        margin-top: -50px;
+        margin-left: -50px;
+        background-color: blue;
+        animation:orbit 68.7s linear infinite; 
+    }
+    
+        
+  
+    #varun{
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        position: absolute;
+        top: 35%;
+        left: 9%;
+        margin-top: -50px;
+        margin-left: -50px;
+        background-color: #fff;
+        animation:orbit 68.7s linear infinite; 
+    }
+    @keyframes orbit{
+        to{
+            transform: rotate(360deg);
+        }
+    }
+   
+ 
+
+
+    </style>
+</head>
+<body>
+<div class="sun">surya</div>
+<div id="budh"  class="planet"></div>
+<div id="sukra" class="planet"></div>
+<div id="moon" class="planet"></div>
+<div id="earth" class="planet"></div>
+<div id="mangal" class="planet"></div>
+<div id="virspati" class="planet"></div>
+<div id="ch" class="planet">
+<div id="shani" class="planet"></div></div>
+<div id="arun" class="planet"></div>
+<div id="varun" class="planet"></div>
+
+
+
+
+</body>
+</html>
+

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h4>hare krishna</h4>
+    <p id="demo"></p>
+    <script>
+        
+        // let text="hare krishna";
+        // let pattern=/krishna/i;
+        // let result=text.match(pattern);
+        // document.getElementById('demo').innerHTML=result;
+
+
+
+          
+        let text=`write a program 
+        program for ...all there
+        write a program..
+        write a program...`;
+        let pattern=/^write/igm;
+        let result=text.match(pattern);
+        document.getElementById('demo').innerHTML=result;
+    </script>
+</body>
+</html>

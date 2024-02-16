@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let c=[['ak','bk','ck'],
+            ['dk','ek','gk'],
+            ['hk','ik','jk']];
+    //     console.log(c);
+    // const newc=c.flat();
+    // console.log(newc);
+
+
+    //performance.now()
+        const d1=performance.now();
+        for( let i=0;i<c.length;i++){
+            for(let j=0;j<c.length;j++){
+                console.log('c',c[i][j]);
+            }
+        }
+        const d2=performance.now();
+        const newc=c.flat();
+        const d3=performance.now();
+        for( let i=0;i<newc.length;i++){
+            console.log('c',newc[i]);
+        }
+        const d4=performance.now();
+        console.log('2d array time',d2-d1);
+        console.log('1d array time',d4-d3);
+        
+
+
+
+    </script>
+</body>
+</html>

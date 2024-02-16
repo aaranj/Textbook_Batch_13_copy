@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+               
+        
+        #form{
+            width: 400px;
+            height: 500px;
+            position: absolute;
+            left: 20%;
+            top: 30px;
+            padding: 40px;
+            border-radius: 20%;
+            background-color:white;
+            
+         
+        }
+        input[type="text"]{
+            width: 100%;
+            height: 30px;
+            border-radius: 30px;
+            color: red;
+            font-size: 20px;
+        }
+        p{
+            color: red;
+            font-size: 20px;
+            text-transform: capitalize;
+            text-decoration: underline double green;
+        }
+    </style>
+</head>
+<body>
+    <div id="form">
+        <p>onkeyDown</p>
+        <input type="text" id="down">
+        <p>onkeyUp</p>
+        <input type="text" id="up">
+        <p>onkeyPress</p>
+        <input type="text" id="press">
+
+    </div>
+    <script>
+        let keyevent1=document.getElementById('down');
+        keyevent1.addEventListener('keydown',function show(){
+        document.getElementById('form').style.backgroundColor=this.value;
+        // alert(this.value);
+    
+    })
+    let keyevent2=document.getElementById('up');
+        keyevent2.addEventListener('keyup',function show(){
+        
+        //alert(this.value);
+        document.getElementById('form').style.backgroundColor=this.value;
+    
+    })
+    let keyevent3=document.getElementById('press');
+        keyevent3.addEventListener('keypress',function show(){
+        document.getElementById('form').style.color=this.value;
+        //alert(this.value);
+    
+    })
+    </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 5px;
+            box-shadow: 2px 2px 5px #ccc;
+
+        }
+        .left>h1{
+           padding-left: 30px;
+           text-transform: uppercase;
+           font-weight: 800;
+        }
+        .right{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .right>a{
+            margin-right: 20px;
+            font-size: 1.1rem;
+            text-decoration: none;
+            transition: 0.7;
+          
+        }
+        .right>a:hover{
+            color: blue;
+            opacity: 0.9;
+        }
+        .card{
+            margin-top: 5rem;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+        }
+        .card>img{
+            max-width: 400px;
+            margin-left: 20px;
+            text-align: center;
+        }
+        @media screen and(max-width: 768px){
+        
+           .card{
+            display: inline;
+            text-align: center;
+           }
+           } 
+        
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="left">
+            <h1>navbar</h1>
+        </div>
+        <div class="right">
+            <a href="#">home</a>
+            <a href="#">about</a>
+            <a href="#">face</a>
+            <a href="#">whats</a>
+            <a href="#">ram</a>
+            <a href="#">mohan</a>
+        </div>
+    </nav>
+    <div class="card">
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTHW2eFHG4Ex51JTVzuEjeyspKtJDf-qnBYw&usqp=CAU" alt="">
+        </div>
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTHW2eFHG4Ex51JTVzuEjeyspKtJDf-qnBYw&usqp=CAU" alt="">
+        </div>
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTHW2eFHG4Ex51JTVzuEjeyspKtJDf-qnBYw&usqp=CAU" alt="">
+        </div>
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTHW2eFHG4Ex51JTVzuEjeyspKtJDf-qnBYw&usqp=CAU" alt="">
+        </div>
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTHW2eFHG4Ex51JTVzuEjeyspKtJDf-qnBYw&usqp=CAU" alt="">
+        </div>
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTHW2eFHG4Ex51JTVzuEjeyspKtJDf-qnBYw&usqp=CAU" alt="">
+        </div>
+
+    </div>
+    
+</body>
+</html>

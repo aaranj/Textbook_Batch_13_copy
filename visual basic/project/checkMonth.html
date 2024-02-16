@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #rk{
+            width: 600px;
+            height: 400px;
+            background-image: url(pahad.jpg);
+            background-size: cover;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <p id="r"></p>
+    <h4>Enter the month no</h4>
+    <input type="number">
+    <input type="submit" ><br>
+    
+    <button>hari bol</button><br>
+    <button onclick="document.body=alert('first of all you talk the radhe radhe');">tap to read note</button><br>
+    <button onclick="document.body=prompt('enter two number');">tap to add</button><br>
+    <button>tap to sub</button><br>
+    <button>tap to mul</button> <br>
+    <button>tap to div</button><br>
+    <button>tap to mod</button><br>
+    <button>hari to check condition</button><br>
+    <div id="rk"></div><br><br>
+    <button onclick="document.getElementById('rk').style.border='4px solid blue';">click to add border</button>
+    <button onclick="document.getElementById('rk').style.borderRadius='50%';">click to add border radius</button>
+    <script>
+        var mon=9;
+        switch(mon)
+        {
+            case 1:{
+                document.getElementById('rk').innerHTML='january';
+                break;
+            }
+            case 2:{
+                document.getElementById('rk').innerHTML='february';
+                break;
+            }
+            case 3:{
+                document.getElementById('rk').innerHTML='march';
+                break;
+            }
+            case 5:{
+                document.getElementById('rk').innerHTML='april';
+                break;
+            }
+            case 6:{
+                document.getElementById('rk').innerHTML='may';
+                break;
+            }
+            case 7:{
+                document.getElementById('rk').innerHTML='june';
+                break;
+            }
+            case 1:{
+                document.getElementById('rk').innerHTML='july';
+                break;
+            }
+            case 8:{
+                document.getElementById('rk').innerHTML='august';
+                break;
+            }
+            case 9:{
+                document.getElementById('rk').innerHTML='september';
+                break;
+            }
+            case 10:{
+                document.getElementById('rk').innerHTML='october';
+                break;
+            }
+            case 11:{
+                document.getElementById('rk').innerHTML='november';
+                break;
+            }
+            case 12:{
+                document.getElementById('rk').innerHTML='december';
+                break;
+            }
+            default:{
+                document.getElementById('rk').innerHTML='hari bol';
+
+            }
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onresize="document.body.style.backgroundColor='blue'">
+    <div id="ram">hare krishna</div>
+    <p id="krishna">hare ram</p>
+    <button onclick="document.getElementById('ram').innerHTML=Date()">tap to date</button>
+    <button onmouseout="document.body.style.color='blue'">mouse out</button>
+    <button onmousemove="document.body.style.color='green'">mouse move</button>
+    <button onmouseup="document.body.style.color='pink'">mouse up</button>
+    <button onmousedown="document.body.style.color='yellow'">mouse down </button>
+    <button onmouseover="document.body.style.color='gray'">mouse over</button>
+    
+    <input type="text" id="s" >
+    <p>hare krishna hare krishna krishna krishna hare hare</p>
+    
+    <script>
+        
+    document.getElementById('s').onkeydown=function(){
+        document.getElementById('ram').innerHTML='key is down'
+     }
+    document.getElementById('s').onkeyup=function(){
+        document.getElementById('ram').innerHTML='key is up';
+     }
+        // document.body.onload=function(){
+        //     alert('document is loaded');
+        // }
+        // document.body.onunload=function(){
+        //     alert('document is unloaded');
+        // }
+        
+
+
+        
+
+
+    </script>
+
+
+
+    
+</body>
+</html>

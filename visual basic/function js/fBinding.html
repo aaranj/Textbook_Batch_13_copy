@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a={name:'ram' ,roll:'1',age:17,class:12}
+        let b={ name:'sita',roll:'2',age:15,class:10}
+        function p(){
+            document.write('name= '+this.name+"<br>"+'roll= '+this.roll+"<br>"+'age= '+this.age+"<br>"+'class='+this.class+"<br>"+"-------------"+"<br>");
+        }
+            let pr=p.bind(a);
+            let br=p.bind(b);
+            pr();
+            br();
+
+            let animal={name:'deer',color:'orange',quality:'jump',food:"grass"};
+            let bird={name:'parrot',color:'green',quality:'fly',food:'kida'};
+            function an(){
+                document.write(this.name+"<br>"+this.color+"<br>"+this.quality+"<br>"+this.food);
+                
+            }
+            let d=an.bind(animal);
+            d();
+
+
+        
+    </script>
+    
+</body>
+</html>

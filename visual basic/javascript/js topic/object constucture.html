@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function ak(first,last, age,city){
+    this.firstname=first;
+    this.lastname=last;
+    this.age=age;
+    this.city=city;
+
+};
+var s=new ak('ram','kumar',17,'bhojpur','india');
+s.state='bihar';
+var t=new ak('shyam','kumar',42,'bhgalpur');
+
+ak.name=function(){
+    return this.firstname+""+this.lastname;
+}
+
+console.log(s);
+console.log(t);
+ak.prototype.country='india';
+</script>
+</body>
+</html>

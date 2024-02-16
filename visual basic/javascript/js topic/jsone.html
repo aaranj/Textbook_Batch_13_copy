@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+    
+    
+    var obj=`{"name":"hare krishna",
+"mobile":9999999999,"city":"ara",
+"course":["bbm","bca","bba"],
+"address":{"area":"bhojpur","pin":"802206"}
+}`;
+// var name=obj["name"];
+// var mobile=obj["mobile"];
+// var city=obj["city"]
+// document.getElementById('demo').innerHTML="name ="+name;
+// for(let i in obj)
+// {
+//     document.getElementById('demo').innerHTML +=i+": "+obj[i]+"<br/>"
+// }   
+//json parse
+var data=JSON.parse(obj);
+var name=data.name;
+var course1=data.course[0];
+var course2=data.course[2];
+  console.log(course1,course2);
+  
+  //json stringify
+  var dat=JSON.stringify(obj);
+//   document.getElementById('demo').innerHTML=dat;
+console.log(dat);
+var a=['ara','patna','baliya','banaras','chpra'];
+var city=JSON.stringify(a);
+console.log(city);
+
+
+
+
+    </script>
+</body>
+</html>

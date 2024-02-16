@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 250px;
+            width: 400px;
+            background-image: conic-gradient(red,yellow,blue,red);
+            position: absolute;
+            left: 20%;
+            top: 50px;
+            padding: 80px;
+        }
+        #postButton{
+            width: 100px;
+            height: 40px;
+            border-radius: 40px;
+            background-color: blueviolet;
+        }
+        #postText{
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div id="postContainer">
+    <textarea name="" id="postText" cols="30" rows="10" placeholder="some write hear"></textarea><br>
+    <button id="postButton">post</button>
+    </div>
+    <script>
+        const postText=document.getElementById('postText');
+        const postButton=document.getElementById('postbutton');
+        const postContainer=document.getElementById('postContainer');
+
+
+        let posts=[];
+
+        function addpost() {
+            const text=postText.value;
+            if(text!=''){
+                const single_post={
+                    text:text,
+                    likes:0,
+                    comments:[]
+                };
+                posts.push(single_post);
+                console.log(posts);
+            }
+        }
+        
+        displayPost();
+        function displayPost(){
+            postContainer.innerHTML='';
+            posts.forEach((p,index)=>{
+                const postElement=document.createElement(div);
+                postElement.classList.add('post data');
+                console.log('p value',p,index);
+                postElement.innerHTML=`
+                <p>$(p.text)</p>
+                <button onclick='likePost(${index})'>likes(${p.likes})</button>
+                <input type='text' id='commentInput'-${index}placeholder='addComment'/>
+                <button onclick="addcomment(${index}),document.getElementById('commentInput-${index}').value">comment</button>
+                <ul class= 'post'>
+                    ${p.comments.map((comment)=>`<ul>${comment}</li>`)}
+                        </ul>`
+            
+            })     
+            
+        }
+    
+        function likePost(index){
+            posts[index].likes++;
+            displayPost();
+        }
+        function addComment(index,commentText){
+            console.log('commentText',commentText);
+            posts[index].comments.push(commentText);
+            displayPost();
+        }
+        postButton.addEventListener('click',addpost); -->
+<script>
+        function bubble(arr){
+            let n=arr.length;
+            for(let i=0;i<n-1;i++){
+                for(let j=i;j<n-1;j++)
+                if(arr[j-1]>arr[j]){
+                    temp=arr[j-1];
+                    arr[j-1]=arr[j];
+                    arr[j]=temp;
+                }
+            }
+        
+        }
+        let arr=[4,5,3,40,30,55,76,4,6,5];
+        bubble(arr);
+        console.log(arr);
+
+
+
+    </script>
+</body>
+</html>

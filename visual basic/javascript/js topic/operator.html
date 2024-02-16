@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="h">hare krishna</p>
+    <p id="hari"></p>
+    <button onclick="document.getElementById('h').innerHTML='hare krishna hare krishna krishna krishna hare hare'"
+        ;>hari bol</button>
+    <script>
+        // let math = eval(prompt('enter m of m')), english = eval(prompt('enter m of e')), hindi = eval(prompt('enter m of h')), ds = eval(prompt('enter m of ds')), cn = eval(prompt('enter m of cn'));
+        // let total = math + english + hindi + ds + cn;
+        // document.write(total + "<br>");
+        // if (total > 450 && total < 500)
+        //     document.write('topper');
+        // else if (total > 300 && total < 450)
+        //     document.write('1st div');
+        // else if (total > 225 && total < 300)
+        //     document.write('2nd div');
+        // else if (total > 150 && total < 225)
+        //     document.write('3rd div');
+        // else
+        //     document.write('radhe radhe');
+
+
+        //for in loop
+        var m={name:'hari',roll:'40',mark:'316'};
+        for(key in m)
+        console.log(key,m[key]);
+
+        //for of loop
+        var y=[10,30,40,50,70,55];
+        for(key of y)
+        console.log("<br>"+key+"<br>");
+
+        //while loop
+
+        var t=0;
+        while(t<40)
+        {
+        document.write(t+"&nbsp");
+        t++;
+    
+        }
+        document.write("<br>")
+
+        //do while loop
+        var s=1;
+        do{
+            document.write("&nbsp"+s);
+            s++;
+          
+        }
+        while(s<45);
+        document.write("<br>")
+
+
+        //neasted loop
+        var i,j;
+        for(i=1;i<=9;i++)
+        {
+            var line=' ';
+            for(j=1;j<i;j++)
+            {
+                line+=i;
+            }
+            document.write(line+"<br>");
+        }
+        for(i=9;i>=1;i--)
+        {
+            var line=' ';
+            for(j=1;j<i;j++)
+            {
+                line+=i;
+            }
+            document.write(line+"<br>");
+        }
+        for(i=1;i<=9;i++)
+        {
+            var line=' ';
+            for(j=1;j<i;j++)
+            {
+                line+=i;
+            }
+            document.write(line+"<br>");
+        }
+        for(i=9;i>=1;i--)
+        {
+            var line=' ';
+            for(j=1;j<i;j++)
+            {
+                line+=i;
+            }
+            document.write(line+"<br>");
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
